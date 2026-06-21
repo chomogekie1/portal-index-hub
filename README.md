@@ -1,2 +1,48 @@
 # portal-index-hub
-HTML page archive and documentation
+
+## 项目简介
+
+portal-index-hub 是一个用于归档和发布多个独立 HTML 页面的仓库。  
+本仓库不针对任何特定的域名或网站，仅作为静态页面资源的集中存放与索引目录。  
+适合用于存放工具页面、信息展示页、临时页面或实验性 HTML 内容。
+
+## 仓库结构
+
+```
+portal-index-hub/
+├── index.html          # 仓库主页 / 页面索引
+├── pages/              # 存放各独立 HTML 页面的目录
+│   ├── example-page-1.html
+│   ├── example-page-2.html
+│   └── ...
+├── assets/             # 公共资源文件（CSS、JS、图片等）
+│   ├── styles/
+│   ├── scripts/
+│   └── images/
+└── README.md           # 本文件
+```
+
+## 页面归档说明
+
+- 所有独立 HTML 页面统一存放在 `pages/` 目录下，文件名应保持简洁且具有辨识度。
+- 每个页面应尽量自包含，如需引用外部资源，请优先使用仓库内 `assets/` 目录下的文件。
+- 页面之间无强关联，可独立访问，适合通过 GitHub Pages 或其他静态托管服务发布。
+- 索引页面 `index.html` 提供所有页面的导航链接，便于浏览和检索。
+
+## 维护说明
+
+- 新增页面：在 `pages/` 目录下添加 HTML 文件，并在 `index.html` 中更新链接。
+- 更新页面：直接修改对应文件，注意保持目录结构和资源引用的正确性。
+- 删除页面：移除文件并同步更新索引页面。
+- 资源管理：通用样式、脚本或图片请放入 `assets/` 对应子目录，避免重复。
+- 本仓库欢迎提交 Pull Request 进行页面增删改，但请确保内容合规、无恶意代码。
+
+## 使用方式
+
+1. 克隆或下载本仓库。
+2. 在本地打开 `index.html` 即可浏览页面索引。
+3. 如需部署到 GitHub Pages，请在仓库设置中启用 Pages 功能，选择 `main` 分支作为源。
+
+## 许可
+
+本仓库内容采用 MIT 许可证发布，详情请见 [LICENSE](./LICENSE) 文件。

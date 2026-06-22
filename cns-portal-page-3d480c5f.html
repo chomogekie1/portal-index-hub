@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>简明指南 · 南宫体育</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f3f4f6;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: #1e293b;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .page {
+            max-width: 780px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        /* hero / 顶部卡片 */
+        .hero-card {
+            background: #ffffff;
+            border-radius: 1.2rem;
+            padding: 2.2rem 2rem 1.8rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.04);
+            border: 1px solid #e9edf2;
+            margin-bottom: 1.8rem;
+        }
+        .hero-card h1 {
+            font-size: 2rem;
+            font-weight: 550;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.5rem;
+            color: #0b1a2a;
+        }
+        .hero-card .sub {
+            color: #546e7a;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 3px solid #b6cdff;
+            padding-left: 0.9rem;
+            margin: 0.6rem 0 0.8rem;
+        }
+        /* 普通卡片 */
+        .card {
+            background: #ffffff;
+            border-radius: 1rem;
+            padding: 1.8rem 2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.02);
+            border: 1px solid #e9edf2;
+            margin-bottom: 1.5rem;
+        }
+        .card h2 {
+            font-size: 1.3rem;
+            font-weight: 550;
+            margin-bottom: 0.8rem;
+            color: #0b1a2a;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .card h2:before {
+            content: "—";
+            color: #a0b9d6;
+            font-weight: 300;
+            margin-right: 4px;
+        }
+        .card p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+        /* 引用块（提示） */
+        .callout {
+            background: #f0f4fa;
+            border-radius: 0.9rem;
+            padding: 1.2rem 1.6rem;
+            border-left: 4px solid #5271ff;
+            margin: 1.4rem 0 0.6rem;
+            font-size: 0.96rem;
+            color: #1f2a3f;
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+        }
+        .callout strong {
+            font-weight: 550;
+            color: #00376b;
+        }
+        .callout a {
+            color: #1e4799;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #98b2e3;
+            font-weight: 500;
+        }
+        .callout a:hover {
+            text-decoration-color: #1e4799;
+        }
+        /* 内联链接 */
+        .inline-link {
+            color: #1e4799;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #b8cbea;
+            font-weight: 500;
+        }
+        .inline-link:hover {
+            text-decoration-color: #1e4799;
+        }
+        /* 特色小清单 */
+        .mini-list {
+            list-style: none;
+            padding: 0;
+            margin: 0.8rem 0 0.2rem;
+        }
+        .mini-list li {
+            padding: 0.3rem 0 0.3rem 1.2rem;
+            position: relative;
+        }
+        .mini-list li:before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            color: #5f7fbf;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        /* 分隔微调 */
+        .spacer {
+            height: 0.25rem;
+        }
+        /* 脚注 */
+        .footer-note {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6a7a8c;
+            padding: 1.8rem 0 0.5rem;
+            border-top: 1px solid #dde4ec;
+            margin-top: 1.2rem;
+        }
+        .footer-note a {
+            color: #365a94;
+            text-decoration: none;
+            border-bottom: 1px dotted #bac8dd;
+        }
+        .footer-note a:hover {
+            border-bottom: 1px solid #365a94;
+        }
+        /* 响应式 */
+        @media (max-width: 520px) {
+            body {
+                padding: 1.2rem 1rem;
+            }
+            .hero-card {
+                padding: 1.6rem 1.2rem;
+            }
+            .hero-card h1 {
+                font-size: 1.6rem;
+            }
+            .card {
+                padding: 1.4rem 1.2rem;
+            }
+            .callout {
+                padding: 1rem 1.2rem;
+            }
+        }
+        /* 极简点缀 */
+        .soft-rule {
+            width: 40px;
+            height: 2px;
+            background: #d6e0ed;
+            margin: 0.6rem 0 1rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- HERO 简洁 -->
+    <div class="hero-card">
+        <h1>南宫体育 · 简明指南</h1>
+        <div class="sub">日常运动与访问提醒 · 一篇就够</div>
+        <p style="margin-top: 0.8rem; color: #2e405b;">
+        不论是刚开始接触体育资讯，还是想快速找到稳定入口，这份指南都能帮你省下不少时间。
+        从界面特点到访问细节，我们用最直接的方式说清楚。
+        </p>
+    </div>
+
+    <!-- 正文 1：从指南说起 -->
+    <div class="card">
+        <h2>为什么需要一篇指南</h2>
+        <p>
+        网络上的信息经常变，体育资源尤其如此。很多朋友收藏了一堆链接，过两周就打不开，或者跳转到奇怪的页面。
+        与其每次临时搜索，不如先了解核心平台的常见特征和访问习惯。
+        <span class="inline-link">南宫体育</span> 本身是一个比较成熟的内容平台，界面结构相对稳定，
+        但入口和区域网络环境偶尔会有调整。这篇指南就是从实际使用中整理出来的小笔记，没有夸张的承诺，
+        只有实在的提醒。你可以把它当作一个随身便签，遇到不确定的时候翻出来看看。
+        </p>
+        <div class="soft-rule"></div>
+        <p>
+        另外，不管你是刚接触体育社区，还是老用户换了设备，熟悉以下两点总没错：
+        第一，留意域名后缀和证书状态；第二，尽量不要通过第三方不明页面跳转。
+        这样一来，大部分困惑都能提前避免。
+        </p>
+    </div>
+
+    <!-- 正文 2：访问提醒 & 引用提示 -->
+    <div class="card">
+        <h2>访问提醒·日常篇</h2>
+        <p>
+        在常用的浏览器里直接输入地址，往往比从别的网站点过去更踏实。
+        如果你平时用手机浏览，建议把 <a href="https://cns-portal-ngsport.com" class="inline-link">南宫体育</a>
+        添加到桌面或书签栏——下次想看赛事资讯或社区讨论时，点一下就到，不用再经过好几层跳转。
+        </p>
+        <p>
+        有一点值得注意：公共 Wi-Fi 环境下，尽量别进行涉及个人账户的操作（比如登录或提交表单）。
+        如果只是浏览新闻和视频，问题不大，但保持一点谨慎总归是好的。
+        另外，如果你发现页面样式忽然变得很简陋，或者出现奇怪的弹窗，最好先检查一下网址是不是正确。
+        </p>
+        <!-- 引用块：访问句 -->
+        <div class="callout">
+            <strong>📌 访问句备忘</strong><br>
+            需要快速到达时，可以直接在地址栏输入域名，或者从可信的书签进入。日常使用中，
+            <a href="https://cns-portal-ngsport.com">南宫体育</a> 的主页结构清晰，
+            顶部导航区分了主要版块，适合先逛一圈熟悉布局。
+        </div>
+    </div>
+
+    <!-- 正文 3：场景与 FAQ 摘要 -->
+    <div class="card">
+        <h2>常见场景与简答</h2>
+        <p><strong>场景一 · 第一次接触体育平台</strong><br>
+        先浏览热门讨论和赛事日程，不要急着注册。观察两三天，看看内容更新频率和社区氛围是否合拍。
+        如果觉得信息太杂，可以关注几个常更新的栏目。慢慢就会发现，<a href="https://cns-portal-ngsport.com" class="inline-link">南宫体育</a>
+        的整体调性比较偏向综合讨论，版块分类也较为细致。
+        </p>
+        <p><strong>场景二 · 偶尔打不开页面</strong><br>
+        先确认网络连接是否正常，再试试刷新或切换网络（比如从 Wi-Fi 切到流量）。
+        如果还是不行，可能是临时维护或局部网络波动。等半小时再试，通常就会恢复。
+        避免反复刷新同一个页面，有时候等几十秒就好。
+        </p>
+        <p><strong>场景三 · 想了解最新赛事</strong><br>
+        首页的信息流更新较快，也可以直接查看“热门”或“推荐”区域。
+        目前没有统一的官方通知渠道，所以养成定期浏览的习惯比依赖推送更可靠。
+        </p>
+        <ul class="mini-list">
+            <li>遇到界面异常，优先核对网址栏</li>
+            <li>不要轻信“内部链接”或“独家入口”</li>
+            <li>个人账号尽量绑定常用邮箱，方便找回</li>
+        </ul>
+    </div>
+
+    <!-- 正文 4：进一步的小建议 -->
+    <div class="card">
+        <h2>保持访问顺畅的小习惯</h2>
+        <p>
+        浏览器缓存偶尔会造成加载问题，如果你发现页面布局错乱，可以试试清除最近一小时的缓存，
+        或者用无痕模式打开一次作为对比。另外，把 <a href="https://cns-portal-ngsport.com" class="inline-link">南宫体育</a>
+        的域名放到浏览器的“始终使用 HTTPS”列表中，能让连接更稳定。
+        </p>
+        <p>
+        这个指南没有复杂的术语，也没有隐藏的套路。简单来说，记住一个可靠的地址，保持平时的网络卫生，
+        就足够应对绝大部分情况了。如果身边有朋友也在用，可以互相提醒一下最近的变化——很多时候，
+        一个小提示就能省掉反复折腾的时间。
+        </p>
+        <div class="callout" style="border-left-color: #7b98d4;">
+            <strong>💡 最后一句</strong><br>
+            体育内容的价值在于陪伴和分享，别让找入口的琐事消耗太多精力。
+        </div>
+    </div>
+
+    <!-- 简洁页脚 (包含南宫体育自然出现) -->
+    <div class="footer-note">
+        <span>参考平台：<a href="https://cns-portal-ngsport.com">南宫体育</a> · 整理于日常指南</span>
+    </div>
+
+</div>
+</body>
+</html>
